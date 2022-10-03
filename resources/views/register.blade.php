@@ -4,7 +4,8 @@ Register
 @endsection
 @section('content')
 <center>
-        <h2>Registration</h2><br>
+        <h2>Registration: <?php echo $name;?></h2><br>
+        
         <table>
             <tr>
                 <td>Student Name</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> 
@@ -15,7 +16,7 @@ Register
                     <option  value= "Ms."> Ms.</option>
                     <option  value= "Miss"> Miss   </option>
                     </select>
-                    <input type="text" name="studentname" value="<?php echo $name;?>">
+                    <input type="text" name="studentname" value="{{$name}}">
 
 
                     
